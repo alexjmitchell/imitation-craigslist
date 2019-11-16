@@ -1,12 +1,16 @@
 const router = require("express").Router()
-
-const users = [
-  { id: 1, name: "Mike" },
-  { id: 2, name: "Ryan" }
-]
+const db = require("../db")
 
 router.get("/", (req, res, next) => {
-  res.json(users)
+  const sql = `
+  SELECT id,name,parent_id,slug
+  FROM categories
+  WHERE parent_id IS NULL;
+  `
+
+  db.query(sql, (err, results, fields) => {
+    res.json(results)
+  })
 })
 
 module.exports = router
