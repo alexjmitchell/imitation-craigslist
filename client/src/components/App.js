@@ -1,17 +1,14 @@
 import React from "react"
-import { useUsers } from "../hooks"
+import HomePage from "./HomePage"
+import { BrowserRouter as Router, Link, Route } from "react-router-dom"
 
-function App() {
-  const { users } = useUsers()
-
-  console.log(users)
-
+const App = props => {
   return (
-    <div>
-      {users.map(user => (
-        <p key={user.id}>{user.name}</p>
-      ))}
-    </div>
+    <Router>
+      <div className="container">
+        <Route exact path="/" component={HomePage} />
+      </div>
+    </Router>
   )
 }
 
