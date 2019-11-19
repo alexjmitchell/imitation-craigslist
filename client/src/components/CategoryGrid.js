@@ -8,6 +8,7 @@ import Personals from "./MainCategories/Personals"
 import Gigs from "./MainCategories/Gigs"
 import Resumes from "./MainCategories/Resumes"
 import List from "./List"
+import Locations from "./Locations"
 import "../styles/CategoryGrid.css"
 import { useCategories } from "../hooks"
 
@@ -65,10 +66,12 @@ const CategoryGrid = props => {
         <List
           data={category.children}
           header={category.category}
+          MainSlug = {category.slug}
           maxHeight={500}
           key={`cat-${i}`}
         />
       ))}
+      {/* <Locations /> */}
     </div>
   )
 }

@@ -1,5 +1,14 @@
 .grid {
   display: grid;
-  grid-template-columns: 33% 37% 22%;
+  grid-template-columns: repeat(4, 20%);
   gap: 0px;
+  justify-items: center;
 }
+
+/* .grid { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+} */
+

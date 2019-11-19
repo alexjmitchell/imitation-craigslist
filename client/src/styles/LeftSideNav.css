@@ -1,4 +1,4 @@
-.left-nav {
+/* .left-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,9 +10,26 @@
   border-left: #cccccc 1px solid;
   padding: 40px;
   margin-right: 20px;
+} */
+
+
+.left-nav {
+  background: #f4f4f4;
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+  float: left;
+  min-width: 10em;
+  font-size: smaller;
+  margin: 0;
+  min-height: 820px;
+  text-align: center;
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
-h1,h4 {
+h1,
+h4 {
   padding: 0;
   margin: 0;
 }
@@ -29,4 +46,23 @@ input {
 
 a {
   text-decoration: none;
+}
+
+#leftbar .cal {
+  margin: 0 auto;
+}
+.cal {
+  background: #ccc;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+
+.cal td {
+  background: white;
+  border: 1px black solid;
 }

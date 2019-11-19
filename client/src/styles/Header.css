@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background: #eee;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  line-height: 1.7em;
+  margin-top: 5px;
+}

@@ -3,6 +3,7 @@ const express = require("express")
 const categoryRouter = require("./routes/categories")
 const subcategoryRouter = require("./routes/subcategories")
 const locationRouter = require("./routes/locations")
+const postRouter = require("./routes/posts")
 const app = express()
 
 app.use(express.json())
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use("/categories", categoryRouter)
 app.use("/subcategories", subcategoryRouter)
 app.use("/locations", locationRouter)
+app.use("/posts", postRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

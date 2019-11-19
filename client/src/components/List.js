@@ -23,11 +23,13 @@ const parameterize = string => {
 }
 
 const List = props => {
-  const { header, data, maxHeight } = props
+  const { header, data, maxHeight, MainSlug } = props
 
   return (
     <div className="list-container">
-      <h4 className="section-header">{header}</h4>
+      <Link to={MainSlug}>
+        <h4 className="section-header">{header}</h4>
+      </Link>
       <ul className="list-ul">
         {data.map((sub, i) => (
           <li key={i}>
